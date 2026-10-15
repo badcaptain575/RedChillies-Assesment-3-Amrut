@@ -21,7 +21,7 @@ The output provides paired datasets structured for immediate use in training, fi
 The generated dataset strictly adheres to paired binary segmentation benchmarks:
 
 ```text
-dataset/
+output dataset/
 ├── images/
 │   ├── image_00001.jpg
 │   ├── image_00002.jpg
