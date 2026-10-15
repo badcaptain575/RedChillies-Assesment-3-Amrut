@@ -1,4 +1,4 @@
-# Image Segmentation & Matte Extraction Pipeline
+# Image Segmentation Workflow
 
 An automated, node-based salient object segmentation and mask generation pipeline built using ComfyUI and Bria AI's RMBG-1.4 architecture. This system isolates primary target subjects from their backgrounds across diverse visual scenarios and produces paired image-and-binary-mask datasets meeting standard computer vision evaluation specifications.
 
@@ -23,19 +23,19 @@ The generated dataset strictly adheres to paired binary segmentation benchmarks:
 ```text
 dataset/
 ├── images/
-│   ├── image_001.jpg
-│   ├── image_002.jpg
-│   ├── image_003.jpg
-│   ├── image_004.jpg
-│   ├── image_005.jpg
-│   └── image_006.jpg
+│   ├── image_00001.jpg
+│   ├── image_00002.jpg
+│   ├── image_00003.jpg
+│   ├── image_00004.jpg
+│   ├── image_00005.jpg
+│   └── image_00006.jpg
 └── masks/
-    ├── image_001.png
-    ├── image_002.png
-    ├── image_003.png
-    ├── image_004.png
-    ├── image_005.png
-    └── image_006.png
+    ├── image_00001.png
+    ├── image_00002.png
+    ├── image_00003.png
+    ├── image_00004.png
+    ├── image_00005.png
+    └── image_00006.png
 ```
 
 - **`images/`**: Original input photographs across tested categories (products, road, pets, leaves, people, and surface rust defects).
@@ -70,7 +70,7 @@ wget -c -O custom_nodes/ComfyUI_LayerStyle/RMBG-1.4/model.pth "https://huggingfa
 
 ## Workflow Implementation
 
-The full pipeline graph is provided in `image_segmentation_workflow.json`.
+The full pipeline graph is provided in `Redchilles Assesment 3 - (Amrut).json`.
 
 1. **`Load Image`**: Ingests input image files from disk.
 2. **`LayerMask: RmBgUltra V2`**: Executes foreground saliency detection and generates both an RGB subject tensor and an alpha mask.
