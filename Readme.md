@@ -28,14 +28,20 @@ output dataset/
 │   ├── image_00003.jpg
 │   ├── image_00004.jpg
 │   ├── image_00005.jpg
-│   └── image_00006.jpg
+│   ├── image_00006.jpg
+│   ├── image_00007.jpg
+│   ├── image_00008.jpg
+│   └── image_00009.jpg
 └── masks/
     ├── image_00001.png
     ├── image_00002.png
     ├── image_00003.png
     ├── image_00004.png
     ├── image_00005.png
-    └── image_00006.png
+    ├── image_00006.png
+    ├── image_00007.png
+    ├── image_00008.png
+    └── image_00009.png
 ```
 
 - **`images/`**: Original input photographs across tested categories (products, road, pets, leaves, people, and surface rust defects).
